@@ -19,7 +19,6 @@ import {
 interface ProductoCardProps {
   producto: Producto;
   onEditStock: (id: string) => void;
-  onVerDetalles: (id: string) => void;
 }
 
 /** Obtiene la ruta de imagen según la categoría */
@@ -36,7 +35,6 @@ const getImagenProducto = (producto: Producto): string => {
 export const ProductoCard: React.FC<ProductoCardProps> = ({ 
   producto, 
   onEditStock,
-  onVerDetalles,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const estadoStock = getEstadoStock(producto.stock, producto.stockMinimo);

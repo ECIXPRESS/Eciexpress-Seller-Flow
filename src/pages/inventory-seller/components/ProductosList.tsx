@@ -186,7 +186,6 @@ export const ProductosList: React.FC<ProductosListProps> = ({
                   <ProductoCard
                     producto={producto}
                     onEditStock={handleEditStock}
-                    onVerDetalles={handleVerDetalles}
                   />
                 </div>
               ))}
