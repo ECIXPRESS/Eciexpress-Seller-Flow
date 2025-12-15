@@ -1,0 +1,91 @@
+/* Estilos globales de la aplicación */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Efectos 3D */
+.preserve-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Transiciones */
+.transition-transform {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .transition-transform {
+    transition: none;
+  }
+  
+  .animate-pulse {
+    animation: none;
+  }
+}
+
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Colores de estado */
+.text-status-completado { color: #059669; }
+.text-status-pendiente { color: #dc2626; }
+.text-status-total { color: #d97706; }
+
+/* Efectos visuales */
+.shadow-premium {
+  box-shadow: 
+    0 10px 40px -10px rgba(0, 0, 0, 0.1), 
+    0 5px 20px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #FFB44D 0%, #FFCC4D 50%, #FDDF65 100%);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
