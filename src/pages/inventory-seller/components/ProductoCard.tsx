@@ -26,10 +26,10 @@ const getImagenProducto = (producto: Producto): string => {
   if (producto.imagen) return producto.imagen;
   
   const categoriaLower = producto.categoria.toLowerCase();
-  if (categoriaLower.includes('almuerzo')) return '/src/assets/qr-validation-seller/productos/1.jpg';
-  if (categoriaLower.includes('desayuno')) return '/src/assets/qr-validation-seller/productos/2.jpg';
-  if (categoriaLower.includes('bebidas')) return '/src/assets/qr-validation-seller/productos/3.jpg';
-  return '/src/assets/qr-validation-seller/productos/1.jpg';
+  if (categoriaLower.includes('almuerzo')) return '/assets/qr-validation-seller/productos/1.jpg';
+  if (categoriaLower.includes('desayuno')) return '/assets/qr-validation-seller/productos/2.jpg';
+  if (categoriaLower.includes('bebidas')) return '/assets/qr-validation-seller/productos/3.jpg';
+  return '/assets/qr-validation-seller/productos/1.jpg';
 };
 
 export const ProductoCard: React.FC<ProductoCardProps> = ({ 

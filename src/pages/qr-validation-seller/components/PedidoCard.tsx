@@ -37,10 +37,10 @@ const emojisProductos: { [key: string]: string } = {
 /** Obtiene la ruta de imagen según el tipo de producto */
 const getImagenRealProducto = (nombre: string): string => {
   const nombreLower = nombre.toLowerCase();
-  if (nombreLower.includes('hamburguesa')) return '/src/assets/qr-validation-seller/productos/1.jpg';
-  if (nombreLower.includes('pizza')) return '/src/assets/qr-validation-seller/productos/2.jpg';
-  if (nombreLower.includes('ensalada')) return '/src/assets/qr-validation-seller/productos/3.jpg';
-  return '/src/assets/qr-validation-seller/productos/1.jpg';
+  if (nombreLower.includes('hamburguesa')) return '/assets/qr-validation-seller/productos/1.jpg';
+  if (nombreLower.includes('pizza')) return '/assets/qr-validation-seller/productos/2.jpg';
+  if (nombreLower.includes('ensalada')) return '/assets/qr-validation-seller/productos/3.jpg';
+  return '/assets/qr-validation-seller/productos/1.jpg';
 };
 
 /** Obtiene el emoji correspondiente al producto */

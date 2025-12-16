@@ -52,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="relative">
               <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-white ring-offset-2 ring-offset-primary-500 shadow-md">
                 <img 
-                  src="/src/assets/qr-validation-seller/cafeterias/eci.png" 
+                  src="/assets/qr-validation-seller/cafeterias/eci.png" 
                   alt="ECI Express"
                   className="w-full h-full object-cover"
                   onError={(e) => {

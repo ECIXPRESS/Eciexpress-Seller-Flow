@@ -18,10 +18,10 @@ interface PedidoListItemProps {
  */
 const getImagenProducto = (nombre: string): string => {
   const nombreLower = nombre.toLowerCase();
-  if (nombreLower.includes('hamburguesa')) return '/src/assets/qr-validation-seller/productos/1.jpg';
-  if (nombreLower.includes('pizza')) return '/src/assets/qr-validation-seller/productos/2.jpg';
-  if (nombreLower.includes('ensalada')) return '/src/assets/qr-validation-seller/productos/3.jpg';
-  return '/src/assets/qr-validation-seller/productos/1.jpg';
+  if (nombreLower.includes('hamburguesa')) return '/assets/qr-validation-seller/productos/1.jpg';
+  if (nombreLower.includes('pizza')) return '/assets/qr-validation-seller/productos/2.jpg';
+  if (nombreLower.includes('ensalada')) return '/assets/qr-validation-seller/productos/3.jpg';
+  return '/assets/qr-validation-seller/productos/1.jpg';
 };
 
 export const PedidoListItem: React.FC<PedidoListItemProps> = ({
